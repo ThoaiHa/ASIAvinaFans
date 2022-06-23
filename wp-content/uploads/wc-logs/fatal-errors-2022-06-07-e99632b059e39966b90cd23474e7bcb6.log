@@ -1,0 +1,33 @@
+2022-06-07T04:33:08+00:00 CRITICAL Uncaught Error: Failed opening required 'D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-content\plugins\google-listings-and-ads/src/Proxies/Tracks.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-content\plugins\jetpack\vendor\jetpack-autoloader\class-php-autoloader.php:90
+Stack trace:
+#0 [internal function]: Automattic\Jetpack\Autoloader\jpf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ10_9\PHP_Autoloader::load_class('Automattic\\WooC...')
+#1 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-content\plugins\google-listings-and-ads\vendor\league\container\src\Definition\Definition.php(211): class_exists('Automattic\\WooC...')
+#2 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-content\plugins\google-listings-and-ads\vendor\league\container\src\Definition\DefinitionAggregate.php(94): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\Definition->resolve(false)
+#3 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-content\plugins\google-listings-and-ads\vendor\league\container\src\Container.php(157): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\DefinitionAggregate->resolve('Automattic\\WooC...', false)
+#4 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-content\plugins\google-listings-and-ads\vendor\league\container\src\Argument\ArgumentResolverTrait.php(45): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Container->get('Automattic\\WooC...')
+#5 [internal function]: Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\Definition->Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Argument\{closure}('Automattic\\WooC...')
+#6 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-content\plugins\google-listings-and-ads\vendor\league\container\src\Argument\ArgumentResolverTrait.php(19): array_map(Object(Closure), Array)
+#7 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-content\plugins\google-listings-and-ads\vendor\league\container\src\Definition\Definition.php(253): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\Definition->resolveArguments(Array)
+#8 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-content\plugins\google-listings-and-ads\vendor\league\container\src\Definition\Definition.php(212): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\Definition->resolveClass('Automattic\\WooC...')
+#9 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-content\plugins\google-listings-and-ads\vendor\league\container\src\Definition\DefinitionAggregate.php(94): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\Definition->resolve(false)
+#10 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-content\plugins\google-listings-and-ads\vendor\league\container\src\Container.php(157): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Definition\DefinitionAggregate->resolve('Automattic\\WooC...', false)
+#11 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-content\plugins\google-listings-and-ads\vendor\league\container\src\Argument\ArgumentResolverTrait.php(45): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Container->get('Automattic\\WooC...')
+#12 [internal function]: Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Inflector\Inflector->Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Argument\{closure}('Automattic\\WooC...')
+#13 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-content\plugins\google-listings-and-ads\vendor\league\container\src\Argument\ArgumentResolverTrait.php(19): array_map(Object(Closure), Array)
+#14 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-content\plugins\google-listings-and-ads\vendor\league\container\src\Inflector\Inflector.php(112): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Inflector\Inflector->resolveArguments(Array)
+#15 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-content\plugins\google-listings-and-ads\vendor\league\container\src\Inflector\InflectorAggregate.php(53): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Inflector\Inflector->inflect(Object(Automattic\WooCommerce\GoogleListingsAndAds\Tracking\Events\SiteVerificationEvents))
+#16 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-content\plugins\google-listings-and-ads\vendor\league\container\src\Container.php(158): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Inflector\InflectorAggregate->inflect(Object(Automattic\WooCommerce\GoogleListingsAndAds\Tracking\Events\SiteVerificationEvents))
+#17 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-content\plugins\google-listings-and-ads\src\Container.php(90): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Container->get('Automattic\\WooC...')
+#18 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-content\plugins\google-listings-and-ads\src\Tracking\EventTracking.php(71): Automattic\WooCommerce\GoogleListingsAndAds\Container->get('Automattic\\WooC...')
+#19 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-content\plugins\google-listings-and-ads\src\Tracking\EventTracking.php(59): Automattic\WooCommerce\GoogleListingsAndAds\Tracking\EventTracking->register_events()
+#20 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-includes\class-wp-hook.php(307): Automattic\WooCommerce\GoogleListingsAndAds\Tracking\EventTracking->Automattic\WooCommerce\GoogleListingsAndAds\Tracking\{closure}('')
+#21 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#22 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#23 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-settings.php(598): do_action('init')
+#24 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-config.php(96): require_once('D:\\xampp\\htdocs...')
+#25 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-load.php(50): require_once('D:\\xampp\\htdocs...')
+#26 D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-blog-header.php(13): require_once('D:\\xampp\\htdocs...')
+#27 D:\xampp\htdocs\wordpress-5.9.3\wordpress\index.php(17): require('D:\\xampp\\htdocs...')
+#28 {main}
+  thrown in D:\xampp\htdocs\wordpress-5.9.3\wordpress\wp-content\plugins\jetpack\vendor\jetpack-autoloader\class-php-autoloader.php on line 90
+
